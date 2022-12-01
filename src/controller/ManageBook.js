@@ -112,9 +112,7 @@ const UpdateBook = (req, res) => {
             if (err) throw err;
             res.send(result);
             console.log(result);
-            for (var a = 0; a < result.length; a++) {
-                res.send({ Id: result[a].id, BookName: result[a].BookName, Discrition: result[a].Discrition, Auther: result[a].Auther });
-            }
+        
     
         }); 
     } catch (error) {
